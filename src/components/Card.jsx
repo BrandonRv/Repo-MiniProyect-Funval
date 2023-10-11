@@ -1,20 +1,33 @@
-import { useState, useEffect } from "react";
-import "../styles/Card.css"
-
+import React from 'react';
+import '../styles/Card.css';
 
 const Card = (props) => {
+  const { photo, title, type, beds, superHost, rating } = props;
 
-    const { photo, title } = props;
+  return (
+    <>
+    <div className='enmarcado'>
+    <div className="recuadros-info">
+      <img src={photo} className="card-img-top" alt="imagen" />
+    </div>
+    <div className='info-spto'> 
+      <span>
+    {superHost == true ? <span className="card_superHost">SUPER HOST </span> : "" }
+    </span>
+    <span>
+    {type} {beds == null ? "" : `${beds} beds`}
+    </span>
+    <div className="div-estrella">
+   <span className="material-symbols-outlined align-middle" style={{ color: "rgb(235, 87, 87)" }}>
+    star
+   </span>
+   <span className="estrella">{rating}</span>
+   </div>
+    </div>
+     <h6 className="font-weight-bold">{title}</h6>
+     </div>
+     </>
+  );
+};
 
-    console.log("Esto es un Array", photo)
-    console.log("Esto es un Array", title)
-
-
-    return (
-        <div className="card_00">
-            <img src={photo} className="card-img-top" alt="imagen" ></img>
-    
-        </div>
-    )
-}
-export default Card
+export default Card;
