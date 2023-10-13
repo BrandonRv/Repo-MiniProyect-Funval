@@ -1,0 +1,14 @@
+.input-local {
+    margin-top: 3rem;
+    margin-right: 4rem;
+    width: 290px;
+    margin-bottom: 20px;
+}
+
+div > li {
+    cursor: pointer;
+}
+
+li:hover {
+color: brown;
+}
