@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Card from './components/Card';
+import SearchBar from "./components/SearchBar"
 import './App.css';
 
 function App() {
   const [data, setData] = useState([]);
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -55,10 +57,14 @@ function App() {
   };
 
   return (
-    <div className='card-aptos'>
+    <>
+    <SearchBar />
+
+
+    <div id='ver-o-no' className='card-aptos'>
       <div className="listas-orientadas">
         <div className='btn-bf'>
-        <button onClick={handlePrevClick1} disabled={currentPage1 === 0}>&lt;
+        <button className='btn-antes' onClick={handlePrevClick1} disabled={currentPage1 === 0}>&lt;
           </button>
         </div>
         {visibleData1.map((el, i) => (
@@ -66,14 +72,14 @@ function App() {
         ))}
         {/* Botones para la primera fila */}
         <div className='btn-aft'>
-          <button onClick={handleNextClick1} disabled={currentPage1 === totalPagesFirstRow - 1}>
+          <button className='btn-delan' onClick={handleNextClick1} disabled={currentPage1 === totalPagesFirstRow - 1}>
           &gt;
           </button>
         </div>
       </div>
       <div className="listas-orientadas">
         <div className='btn-bf'>
-        <button onClick={handlePrevClick2} disabled={currentPage2 === 0}>
+        <button className='btn-antes' onClick={handlePrevClick2} disabled={currentPage2 === 0}>
         &lt;
           </button>
         </div>
@@ -82,13 +88,15 @@ function App() {
         ))}
         {/* Botones para la segunda fila */}
         <div className='btn-aft'>
-          <button onClick={handleNextClick2} disabled={currentPage2 === totalPagesSecondRow - 1}>
+          <button className='btn-delan' onClick={handleNextClick2} disabled={currentPage2 === totalPagesSecondRow - 1}>
           &gt;
           </button>
         </div>
       </div>
     </div>
+    </>
   );
 }
 
 export default App;
+
