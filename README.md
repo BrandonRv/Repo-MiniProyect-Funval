@@ -1,3 +1,8 @@
+# Solution
+
+- link:
+- link Repositorio: https://github.com/BrandonRv/Repo-MiniProyect-Funval
+
 # Instrucciones
 
 Bienvenido al mini proyecto del nivel 2. En este proyecto estaremos aplicando los conocimientos adquiridos tanto en el nivel 1 como lo que estás aprendiendo actualmente en el nivel 2. Sigue las instrucciones de este archivo para completar el proyecto y ten en cuenta que estas mismas instrucciones se tomarán en cuenta para la evaluación del proyecto.
