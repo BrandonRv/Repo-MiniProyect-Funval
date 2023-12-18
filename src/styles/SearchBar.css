@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+    width: 1300px;
+
+}
+
+.logo, .cajitabtn {
+    padding: 22px 0px 30px;
+ 
+}
+
+.btn-windbnb {
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+img:hover {
+    box-shadow:  1px -3px 30px 28px rgba(255, 225, 225, 0.5);
+}
+
+
+.btn-agregar {
+    margin-top: 1.4rem;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-divv {
+    display: flex;
+}
+
+form {
+    display: flex;
+}

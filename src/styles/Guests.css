@@ -1,0 +1,8 @@
+div > input {
+    margin-top: 3rem;
+    margin-right: 6rem;
+    width: 290px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 15px;
+}
